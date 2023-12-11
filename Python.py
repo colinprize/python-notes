@@ -215,3 +215,7 @@ x = [1,2,4]
 mp = map(lambda i: i+ 2, x)
 print(list(mp))
 [3, 4, 6]
+
+
+x = f'hello {1 + 1} people'
+print(x)
