@@ -216,6 +216,13 @@ mp = map(lambda i: i+ 2, x)
 print(list(mp))
 [3, 4, 6]
 
-
+# f'strings
 x = f'hello {1 + 1} people'
 print(x)
+hello 2 people
+
+y = 'all'
+x = f'hello {y} people'
+print(x)
+
+hello all people
