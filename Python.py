@@ -226,3 +226,19 @@ x = f'hello {y} people'
 print(x)
 
 hello all people
+
+
+# Write a short Python function that takes a strings,representing a sentence,
+# and returns a copy of the string with all punctuation removed. For exam- ple,
+# if given the string "Let s try, Mike.", this function would return "Lets try Mike".
+def remove_punctuation(text):
+  no_punct = ""
+  for char in text:
+    if char not in "!,;:.-?":
+      no_punct += char
+  return no_punct
+
+# Example usage
+text = "Let's try, Mike."
+no_punct_text = remove_punctuation(text)
+print(no_punct_text)  # Output: Lets try Mike
