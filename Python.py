@@ -242,3 +242,28 @@ def remove_punctuation(text):
 text = "Let's try, Mike."
 no_punct_text = remove_punctuation(text)
 print(no_punct_text)  # Output: Lets try Mike
+
+
+
+# Write a Python program that inputs a list of words,
+# separated by white- space, and outputs how many times each word appears in the list.
+# Create an empty dictionary to store word counts
+word_counts = {}
+
+# Prompt the user for the list of words
+words = input("Enter a list of words separated by spaces: ").split()
+
+# Lowercase all the words for case-insensitive comparison
+words_lower = [word.lower() for word in words]
+
+# Count the occurrences of each word
+for word in words_lower:
+  if word in word_counts:
+    word_counts[word] += 1
+  else:
+    word_counts[word] = 1
+
+# Print the word counts
+print("\nWord counts:")
+for word, count in word_counts.items():
+  print(f"{word}: {count}")
